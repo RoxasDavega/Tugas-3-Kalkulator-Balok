@@ -97,7 +97,7 @@ public class View extends JFrame implements ActionListener{
             String w = fWidth.getText();
             String h = fHeight.getText();
             try{
-                //untuk mengubah dari string ke float
+                //untuk mengubah dari string ke double
                 double length = Double.parseDouble(l);
                 double width = Double.parseDouble(w);
                 double height = Double.parseDouble(h);
