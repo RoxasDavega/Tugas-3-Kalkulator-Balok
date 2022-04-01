@@ -31,9 +31,9 @@ public class View extends JFrame implements ActionListener{
         tombolCount = new JButton("Count");
         tombolReset = new JButton("Reset");
         
-        fLength = new JTextField(50);
-        fWidth = new JTextField(50);
-        fHeight = new JTextField(50);
+        fLength = new JTextField();
+        fWidth = new JTextField();
+        fHeight = new JTextField();
         
         setLayout(null);
         add(lTitle);
@@ -98,9 +98,9 @@ public class View extends JFrame implements ActionListener{
             String h = fHeight.getText();
             try{
                 //untuk mengubah dari string ke float
-                float length = Float.parseFloat(l);
-                float width = Float.parseFloat(w);
-                float height = Float.parseFloat(h);
+                double length = Double.parseDouble(l);
+                double width = Double.parseDouble(w);
+                double height = Double.parseDouble(h);
                 Balok balok = new Balok(height, length, width);
                 balok.menghitungLuas(); balok.menghitungKeliling(); 
                 balok.menghitungVolume(); balok.menghitungLuasPermukaan();
